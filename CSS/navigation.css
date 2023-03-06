@@ -1,0 +1,12 @@
+.navigation__listItem {
+    margin: 5px;
+  }
+ 
+  .navigation__list {
+    padding-left: 20px;
+  }
+ 
+  .navigation__list--header {
+    list-style-type: "";
+  }
+ 
