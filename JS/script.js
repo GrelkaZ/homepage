@@ -1,16 +1,25 @@
-console.log("Cześć!");
-
-let button = document.querySelector(".js-header__button");
-let body = document.querySelector(".body");
-let background = document.querySelector(".js-header__background");
-
-
-button.addEventListener("click", () => {
-    body.classList.toggle("color");
-    if (body.classList.contains("color")) {
-        background.innerText = "jasny";
+{
+    const welcome = () => {
+        console.log("Cześć!");
     }
-    else {
-        background.innerText = "zgniłoróżowy";
+
+    const toggleBackground = () => {
+        const body = document.querySelector(".body");
+        const background = document.querySelector(".js-header__background");
+
+        body.classList.toggle("color");
+        if (body.classList.contains("color")) {
+            background.innerText = "jasny";
+        }
+        else {
+            background.innerText = "zgniłoróżowy";
+        }
     }
-});
+
+    const init = () => {
+        const button = document.querySelector(".js-header__button");
+        button.addEventListener("click", toggleBackground);
+
+        welcome()
+    }
+}
