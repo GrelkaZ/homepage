@@ -20,8 +20,8 @@
         const button = document.querySelector(".js-header__button");
         button.addEventListener("click", toggleBackground);
 
-        welcome()
+        welcome();
     }
 
-    init()
+    init();
 }
