@@ -1,9 +1,13 @@
 .navigation__listItem {
-    margin: 5px;
+    margin: 15px;
+    flex-direction: row;
   }
  
   .navigation__list {
-    padding-left: 20px;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
   }
  
   .navigation__list--header {
