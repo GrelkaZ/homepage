@@ -8,11 +8,11 @@
         const background = document.querySelector(".js-header__background");
 
         body.classList.toggle("color");
-        if (body.classList.contains("color")) {
-            background.innerText = "jasny";
-        }
-        else {
-            background.innerText = "zgniłoróżowy";
+        switch (body) {
+            case body.classList.contains("color"): background.inneText = "jasny"
+                break;
+            case body.classList.contains("body"): background.innerText = "zgniłoróżowy"
+                break;
         }
     }
 
